@@ -7,7 +7,8 @@ var availNumbers = "0123456789";
 var availLowercase = "abcdefghijklmnopqrstuvwxyz";
 var availUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var availSpecialChar = "~`!@#$%^&*()?<>/-_=+";
-var passwordString = "";
+var passwordStringConcat = "";
+
 
 var passwordLength = Number(window.prompt("How long do you want your password? Provide a whole number between 8 & 128."));
 //need to make sure entry is entry>= 8 and entry <= 128 and an integer
@@ -51,37 +52,50 @@ if (specialChar === true) {
 }
 console.log(finalPasswordLength, upperCaseYes, lowerCaseYes, pwNumberYes, specialCharYes);
 
-concatString();
-function concatString(){
-  if (upperCaseYes === true) {
-    var passwordStringConcat = passwordString.concat();
-  }
+
+
+//attempt at condensing code
+if (upperCaseYes != false) {
+  passwordStringConcat += upperCaseYes;
 }
-//   // only upperCase false 
-//   else if (upperCaseYes === false && lowerCaseYes != false && pwNumberYes != false && specialCharYes != false) {
-//     var passwordStringConcat = lowerCaseYes.concat(pwNumberYes, specialCharYes);
-//   }
-//   // only lowerCase false
-//   else if (upperCaseYes != false && lowerCaseYes === false && pwNumberYes != false && specialCharYes != false) {
-//     var passwordStringConcat = upperCaseYes.concat(pwNumberYes, specialCharYes);
-//   }
-//   // only number false
-//   else if (upperCaseYes != false && lowerCaseYes != false && pwNumberYes === false && specialCharYes != false) {
-//   // only special character false
-//     var passwordStringConcat = upperCaseYes.concat(lowerCaseYes, specialCharYes);}
-//   else if (upperCaseYes != false && lowerCaseYes != false && pwNumberYes != false && specialCharYes === false) {
-//     var passwordStringConcat = upperCaseYes.concat(lowerCaseYes, pwNumberYes);
-//   }
-//   console.log(passwordStringConcat);
+console.log(passwordStringConcat);
 
-// }  
+if (lowerCaseYes != false) {
+  passwordStringConcat += lowerCaseYes;
+}
+console.log(passwordStringConcat);
 
+if (pwNumberYes != false) {
+  passwordStringConcat += pwNumberYes;
+}
+console.log(passwordStringConcat);
 
+if (specialCharYes != false) {
+  passwordStringConcat += specialCharYes;
+}
+console.log(passwordStringConcat);
+
+ 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 // need to do something for click or blur for button to then call the function of concat and Math.random
 
 // Write password to the #password input   
+var pwConLength = passwordStringConcat.length;
+console.log(pwConLength);
+
+function pwConLength () {
+  let length = passwordLength;
+  let result = "";
+  
+  for (let i = 0; i < length; i++) {
+      result += String.passwordStringConcat(82 + Math.floor(Math.random() * passwordLength)); 
+  }
+  document.getElementById("password").innerHTML = result;
+
+  console.log(result);
+}
 
 // -- getElementById('generate')
 function writePassword() {  
