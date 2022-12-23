@@ -46,6 +46,8 @@ N/A
 
 ## Contributing
 I am open to collaboration for contributing to updates to this page. Please email me at j.engle.dev@gmail.com.
+The GitHub public repository link is https://github.com/jengle-dev/Password-Generator.
+The GitHub published link is https://jengle-dev.github.io/Password-Generator/.
 
 ## Authors and acknowledgment
 Jennifer Engle
