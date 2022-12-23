@@ -3,6 +3,9 @@
   //-- I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
   //-- my input should be validated and at least one character type should be selected
 
+
+  //upon click - generate start prompts *********************
+
 var availNumbers = "0123456789";
 var availLowercase = "abcdefghijklmnopqrstuvwxyz";
 var availUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -88,13 +91,15 @@ console.log(pwConLength);
 function pwConLength () {
   let length = passwordLength;
   let result = "";
-  
+
   for (let i = 0; i < length; i++) {
-      result += String.passwordStringConcat(82 + Math.floor(Math.random() * passwordLength)); 
-  }
+      // result += String.passwordStringConcat(82 + Math.floor(Math.random() * passwordLength)); 
+      result = Math.random().toString(passwordLength);
+      console.log(result);
+
+    }
   document.getElementById("password").innerHTML = result;
 
-  console.log(result);
 }
 
 // -- getElementById('generate')
