@@ -1,5 +1,4 @@
-# Jennifer Engle - Password Generate
-Module 3 Challenge
+# Jennifer Engle - Password Generator
 
 ## Description
 The goal of this project is to create a webpage a user can use to have a randomized password generated that follows the input parameters the user provides.
@@ -31,18 +30,14 @@ Main Page View upon initial load:</br>
 ![image](https://user-images.githubusercontent.com/117794203/209266837-f9440b73-bb3a-4098-8768-ddfe50199584.png)</br>
 
 
-## Badges
-N/A
-
 ## Visuals
 The site is developed for responsive design so that it can be viewed on any screen size, even mobile.
 
+Example Page:
+![image](https://user-images.githubusercontent.com/117794203/216801526-7ed45cd3-8bbe-44bd-942c-b130220e8185.png)
 
 ## Support
 If there are issues with the site, please reach out to me, Jennifer Engle, at j.engle.dev@gmail.com and reference the site's URL. Please provide any screenshots and behavior along with your browser information.
-
-## Roadmap
-N/A
 
 ## Contributing
 I am open to collaboration for contributing to updates to this page. Please email me at j.engle.dev@gmail.com.
@@ -56,4 +51,4 @@ Jennifer Engle
 No License is used on this site.
 
 ## Project status
-This project is incomplete. I have yet to get the Math.random and the split functions to work. I am happy with what I have otherwise and will resubmit when I have a better understanding of how those work.
+There is additional code I'd like to work out. I'd like to allow the user to exit the question prompts if the length parameter is not met. This would allow them to start over. 
