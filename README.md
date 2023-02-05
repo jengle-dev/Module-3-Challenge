@@ -34,6 +34,7 @@ Main Page View upon initial load:</br>
 The site is developed for responsive design so that it can be viewed on any screen size, even mobile.
 
 Example Page:
+
 ![image](https://user-images.githubusercontent.com/117794203/216801526-7ed45cd3-8bbe-44bd-942c-b130220e8185.png)
 
 ## Support
